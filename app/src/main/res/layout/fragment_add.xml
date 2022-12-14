@@ -8,12 +8,23 @@
     android:padding="20dp"
     tools:context=".fragments.add.AddFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ADD TASK"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink_900" />
+
     <EditText
         android:id="@+id/addTitle_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:hint="Title" />
+        android:layout_marginTop="40dp"
+        android:hint="Title"
+        android:textColor="@color/pink_900"
+        android:background="@drawable/input_text"/>
 
     <EditText
         android:id="@+id/addDescription_et"
@@ -21,20 +32,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Description"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:textColor="@color/pink_900"
+        android:background="@drawable/input_text"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Category:" />
+        android:text="Category:"
+        android:textColor="@color/pink_900"/>
 
     <Spinner
         android:id="@+id/addCategory_spin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:popupBackground="@drawable/input_text"/>
 
     <Button
         android:id="@+id/add_btn"
